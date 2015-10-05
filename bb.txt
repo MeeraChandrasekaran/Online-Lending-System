@@ -1,0 +1,7 @@
+rails g model Lender first_name:string last_name:string email:string password:digest money:integer 
+
+rails g model Borrower first_name:string last_name:string email:string password:digest money:integer purpose:string description:text raised:integer
+
+rails g model Lend amount:integer lender:references borrower:references
+
+https://www.youtube.com/watch?v=QaG9sxj0YJY
